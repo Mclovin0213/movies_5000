@@ -12,3 +12,5 @@ data = data[data['status'] != 'Rumored']
 data = data[data['status'] != 'Post Production']
 data = data[data['vote_count'] >= 100]
 
+data.to_csv('cleaned_data.csv', index=False)
+

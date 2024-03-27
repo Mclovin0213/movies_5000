@@ -1,6 +1,6 @@
 import pandas as pd
 
-CSV_PATH = 'tmdb_5000_movies.csv'
+CSV_PATH = 'cleaned_data.csv'
 
 movies = pd.read_csv(CSV_PATH)
 
@@ -13,5 +13,4 @@ def get_top_100_movies(movies):
     sorted_movies = sorted_movies[sorted_movies['vote_count'] > 100]
 
     return sorted_movies.head(100)
-
 

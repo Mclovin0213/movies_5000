@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies 5000</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}" type="text/css">
 </head>
 <body>
     <header>
         <h1>Movies 5000</h1>
+        <nav>
+            <div id="buttonGroup">
+                <button class="radioButton" onclick="setActive(this)">Top 100</button>
+                <button class="radioButton" onclick="setActive(this)">Budget vs Revenue</button>
+                <button class="radioButton" onclick="setActive(this)">Popularity vs Rating</button>
+                <button class="radioButton" onclick="setActive(this)">Production Company Stats</button>
+            </div>
+        </nav>
     </header>
+    <section id="content">
+        <h2>Top 100</h2>
+
+    </section>
+
+    <script src="{{ url_for('static', filename='js/index.js') }}" ></script>
 </body>
 </html>

@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+    background-color: #31363F;
+    color: white;
+}
+
+header {
+    background-color: #222831;
+}
+
+h1 {
+    margin: 0px;
+    padding: 2vh 0 1vh 0;
+    text-align: center;
+    font-size: 3.5em;
+}
+
+nav {
+    padding-bottom: 3vh;
+}
+
+.radioButton {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid gray;
+    background-color: white;
+    cursor: pointer;
+}
+
+.active {
+    background-color: lightblue;
+    border-color: blue;
+}
+
+#buttonGroup {
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    text-align: center;
+}
